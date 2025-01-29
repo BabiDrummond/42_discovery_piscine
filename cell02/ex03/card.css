@@ -1,0 +1,51 @@
+body {
+    background-color: pink;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    margin: 0px auto;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p {
+    padding: 10px;
+}
+
+#profile-img {
+    width: 400px;
+    height: 200px;
+}
+
+#login{
+    font-weight: bold;
+}
+
+#text {
+    color:dimgray
+}
+
+#contact {
+    background-color: rgb(160, 76, 156);
+    height: 50px;
+}
+
+.social {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}

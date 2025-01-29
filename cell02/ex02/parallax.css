@@ -1,0 +1,31 @@
+.image {
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.divider {
+    height: 500px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#img-1 {
+    background-image: url(https://images.ecycle.com.br/wp-content/uploads/2021/06/07193822/lightscape-LtnPejWDSAY-unsplash-scaled.jpg.webp);
+}
+
+#img-2 {
+    background-image: url(https://www.auroraeco.com.br/blog/wp-content/uploads/2018/03/All_In_A_Spin_Star_trail-1-1170x780.jpg);
+}
+
+.text {
+    text-align: center;
+    color: white;
+    font-size: small;
+}

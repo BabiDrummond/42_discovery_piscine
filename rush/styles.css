@@ -1,0 +1,98 @@
+.custom-navbar{
+    background-color: black; /* Cor de fundo personalizada */
+    color: white; /* Cor do texto personalizada */
+}
+
+.custom-navbar .navbar-brand {
+    color: white !important; /* Cor dos links dentro da navbar */
+}
+
+.custom-navbar .nav-link {
+    color: white !important; /* Cor dos links dentro da navbar */
+}
+
+.custom-navbar .nav-link:hover, 
+.custom-navbar .nav-link:focus {
+    color: #af0c0c !important; /* Cor ao passar o mouse ou ao focar no link */
+}
+
+#hero-area {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background-image: url(./hero-img.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 350px 500px;
+}
+
+#hero-description {
+    text-align: center;
+    width: 70%;
+}
+
+.divider-1 {
+    height: 500px;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.divider-2 {
+    height: 500px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-1 {
+    text-align: center;
+    color: white;
+    font-size: small;
+}
+
+.text-2 {
+    text-align: center;
+    color: black;
+    font-size: small;
+}
+
+/* Estilização do footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilização dos links das redes sociais */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Efeito de hover nos ícones */
+.social-icon:hover {
+    color: #af0c0c; /* Altera a cor ao passar o mouse */
+}
+
+.social-icon i {
+    margin: 0 10px;
+}

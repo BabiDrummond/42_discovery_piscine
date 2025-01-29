@@ -1,0 +1,17 @@
+#bd-bg {
+    background-color: crimson;
+}
+
+#btn-clk {
+    width: 100px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    border-radius: 10%;
+    position: absolute;
+    top: 50%;
+}
+
+.container {
+    text-align: center;
+}
