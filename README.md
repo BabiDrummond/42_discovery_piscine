@@ -43,18 +43,18 @@ git clone https://github.com/BabiDrummond/42_discovery_piscine.git
 <h3>🔥 Preview of Some Projects</h3>
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
-  <img src="img/cell01-ex04.jpg" width="50%" height="300px" style="object-fit: contain;"/>
-  <img src="img/cell02-ex03.jpg" width="50%" height="300px" style="object-fit: contain;"/>
+  <img src="img/cell01-ex04.jpg" width="45%" height="400px" style="object-fit: contain;"/>
+  <img src="img/cell02-ex03.jpg" width="45%" height="400px" style="object-fit: contain;"/>
 </div>
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
-  <img src="img/cell02-ex01.gif" width="50%" height="200px" style="object-fit: contain;"/>
-  <img src="img/cell03-ex01.gif" width="50%" height="200px" style="object-fit: contain;"/>
+  <img src="img/cell02-ex01.gif" width="45%" height="300px" style="object-fit: contain;"/>
+  <img src="img/cell03-ex01.gif" width="45%" height="300px" style="object-fit: contain;"/>
 </div>
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
-  <img src="img/cell03-ex02.jpg" width="50%" height="200px" style="object-fit: contain;"/>
-  <img src="img/cell03-ex03.jpg" width="50%" height="200px" style="object-fit: contain;"/>
+  <img src="img/cell03-ex02.jpg" width="45%" height="300px" style="object-fit: contain;"/>
+  <img src="img/cell03-ex03.jpg" width="45%" height="300px" style="object-fit: contain;"/>
 </div>
 
 <h2 id="contribute">📫 Contribute</h2>
