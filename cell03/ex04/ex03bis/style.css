@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(253, 217, 229);
+    font-family: Rouge Script;
+    font-size: 36px;
+    color: rgb(51, 8, 23);
+}
+
+.container {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 0px;
+    width: 600px;
+    min-height: 95vh;
+    max-height: auto;
+}
+
+.header {
+    display: inline-flex;
+    align-items: center;
+    height: 150px;
+    column-gap: 175px;
+    row-gap: 0px;
+}
+
+#bttn {
+    background-color: rgb(198, 37, 93);
+    border-radius: 10px;
+    border: 2px solid rgb(165, 28, 76);
+    width: 150px;
+    height: 75px;
+    padding: 10px;
+    font-family: Rouge Script;
+    font-size: 30px;
+    color: white;
+}
+
+#bttn:hover {
+    background-color: rgb(238, 113, 157);
+}
+
+.task {
+    border: 1px solid rgb(51, 8, 23);
+    border-radius: 10px;
+    width: 450px;
+    margin: 10px;
+    padding: 10px 30px;
+}

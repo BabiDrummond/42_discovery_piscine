@@ -1,26 +1,26 @@
 const colors = ["red", "green", "blue"]
-let balloon = document.getElementById("balloon")
-let balloonWidth = parseInt(balloon.style.width) || balloon.clientWidth
-let balloonHeight = parseInt(balloon.style.height) || balloon.clientHeight
-let initialWidth = balloonWidth
-let initialHeight = balloonHeight
+const maxSize = 420
+const minSize = 200
+const balloon = document.getElementById("balloon")
+const initialSize = parseInt(balloon.style.width) || balloon.clientWidth
+let balloonSize = parseInt(balloon.style.width) || balloon.clientWidth
 let colorIndex = 0
 
 balloon.addEventListener("click", explodeBalloon)
 balloon.addEventListener("mouseover", hoverBalloon)
 
 function explodeBalloon(){
-    balloonWidth += 10
-    balloonHeight += 10
-    colorIndex += 1
+    balloonSize += 10
 
-    if (balloonWidth > 420) {
-        balloonWidth = initialWidth
-        balloonHeight = initialHeight   
+    if (balloonSize > maxSize) {
+        alert("The balloon popped!")
+        balloonSize = initialSize   
     }
-    
-    balloon.style.width = balloonWidth + "px"
-    balloon.style.height = balloonHeight + "px"
+
+    balloon.style.width = balloonSize + "px"
+    balloon.style.height = balloonSize + "px"
+
+    colorIndex += 1
 
     if (colorIndex > 2) {
         colorIndex = 0
@@ -30,13 +30,13 @@ function explodeBalloon(){
 }
 
 function hoverBalloon(){
-    if (balloonWidth >= 205) {
-        balloonWidth -= 5
-        balloonHeight -= 5
-        colorIndex -= 1
+    if (balloonSize > minSize) {
+        balloonSize -= 5
 
-        balloon.style.width = balloonWidth + "px"
-        balloon.style.height = balloonHeight + "px"
+        balloon.style.width = balloonSize + "px"
+        balloon.style.height = balloonSize + "px"
+
+        colorIndex -= 1
 
         if (colorIndex < 0) {
             colorIndex = 2

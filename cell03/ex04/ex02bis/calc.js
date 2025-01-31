@@ -1,21 +1,32 @@
-$("#submit-btn").click(function(){
-    let value1 = parseInt(document.getElementById("value1").value)
-    let value2 = parseInt(document.getElementById("value2").value)
-    let operator = document.getElementById("operator").value
+const display = document.getElementById('display')
 
-    if ((operator == "/" | operator == "%") & value2 == 0){
-        alert("It’s over 9000!")
-        console.log("It’s over 9000!")
-    }
+function appendToCalculus(value){
+    display.value += value
+}
 
-    if (value1 >= 0 & value2 >= 0){
-        let result = eval(`${value1}${operator}${value2}`)
-        alert("O resultado é: " + result)
-        console.log(result)
-    } else {
-        alert("Error :(")
+$("#clear").click(function (){
+    display.value = ''
+}
+)
+
+$("#equals").click(function (){
+    try {
+        const result = eval(display.value)
+        if(isNaN(result)){
+            alert('Error :(')
+            console.log('Error :(')
+            display.value = ''
+        } else {
+            display.value = result
+            console.log('Result: ' + result)
+        }
+    } catch(error){
+        alert('Error :(')
+        console.log('Error :(')
+        display.value = ''
     }
-})
+}
+)
 
 setInterval(function callMe(){
     alert("Please, use me...")

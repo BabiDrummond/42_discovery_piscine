@@ -10,25 +10,14 @@ $("#balloon").click(function() {
     updateBalloon(10, false)
 })
 
-$("#balloon").mouseout(function (){
+$("#balloon").mouseover(function (){
     updateBalloon(-5, true)
 }
 )
 
 function updateBalloon(value, colorReverse){
     let balloonSize = parseInt(balloon.style.width) || balloon.clientWidth
-
     balloonSize += value
-
-    if (balloonSize > maxSize){
-        balloonSize = initialSize
-
-        balloon.style.width = balloonSize + "px"
-        balloon.style.height = balloonSize + "px"
-    } else if (balloonSize > minSize) {
-        balloon.style.width = balloonSize + "px"
-        balloon.style.height = balloonSize + "px"
-    }
 
     if (colorReverse){
         colorIndex -= 1
@@ -44,5 +33,18 @@ function updateBalloon(value, colorReverse){
         }
     }
 
-    balloon.style.backgroundColor = colors[colorIndex]
+    if (balloonSize > maxSize){
+        alert("The balloon popped!")
+        balloonSize = initialSize
+
+        balloon.style.width = balloonSize + "px"
+        balloon.style.height = balloonSize + "px"
+
+        balloon.style.backgroundColor = colors[colorIndex]
+    } else if (balloonSize > minSize) {
+        balloon.style.width = balloonSize + "px"
+        balloon.style.height = balloonSize + "px"
+
+        balloon.style.backgroundColor = colors[colorIndex]
+    }
 }

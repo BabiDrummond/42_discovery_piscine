@@ -1,9 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(rgb(80, 30, 172), rgb(121, 18, 18))
+}
+
 .btn-menu { /* Button properties definition */
-    background-color: cornflowerblue;
+    background-color: rgb(243, 152, 40);
+    width: 200px;
     color: white;
     padding: 16px;
     font-size: 16px;
-    border-radius: 10%;
+    border-radius: 10px;
 }
 
 .menu { /* Menu positioning */
@@ -14,17 +24,50 @@
 .ingredients { /* Ingredients position defined to not display (display none) */
     display: none;
     position: absolute;
-    background-color: cadetblue;
+    width: 100%;
 }
 
-.ingredients p {
-    padding: 12px 16px;
+.bread {
+    background-color: burlywood;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    height: 70px;
+}
+
+.lettuce {
+    background-color: chartreuse;
+    height: 20px;
+}
+
+.tomato {
+    background-color: red;
+    height: 15px;
+}
+
+.cheddar {
+    background-color: yellow;
+    height: 10px;
+}
+
+.meat {
+    background-color: brown;
+    height: 30px;
+}
+
+.bottom-bread {
+    background-color: burlywood;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 20px;
+}
+
+.ingredients div {
     text-decoration: none;
     display: block;
 }
 
-.ingredients p:hover {
-    background-color: rgb(114, 191, 194);
+.ingredients div:hover {
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .menu:hover .ingredients { /* Set to show ingredients on block when hovering div menu */
@@ -32,5 +75,5 @@
 }
 
 .menu:hover .btn-menu {
-    background-color: rgb(144, 175, 231);
+    background-color: rgb(250, 200, 34);
 }

@@ -1,0 +1,389 @@
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+  overflow: visible;
+}
+
+body {
+  font-family: Lato;
+}
+
+nav {
+  background-color: #310305e5;
+  border-bottom: 2px solid #9a0c3be5;
+}
+
+.nav {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+nav .navbar-collapse ul li a {
+  color: white;
+}
+
+nav .navbar-collapse ul li a:hover {
+  color: #eab6ce;
+  transition-duration: 1000ms;
+}
+
+nav .navbar-collapse ul li {
+  padding-left: 2%;
+}
+
+.nav-logo {
+  color: white;
+}
+
+.nav-logo:hover {
+  color: #eab6ce;
+  transition-duration: 1000ms;
+}
+
+.nav-span {
+  display: inline;
+  width: 2.4rem;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -85px;
+  visibility: hidden;
+}
+
+.layout-dark {
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+.layout-dark-skills {
+  min-height: 50vh;
+  background-color: #000000;
+}
+
+.layout-light {
+  min-height: 100vh;
+  background-color: #eae5e7;
+}
+
+.box-dark {
+  background-color: #000000;
+  padding: 3rem;
+}
+
+.box-light {
+  background-color: #eae5e7;
+  padding: 3rem;
+}
+
+.home-name {
+  font-size: 6rem;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ee163a, #eab6ce, #ee163a, #eab6ce, #ee163a);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 12s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 400%;
+  }
+
+  100% {
+    background-position: 0%;
+  }
+}
+
+.updown-animate {
+  animation-name: infiniteupdown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  transition: all .2s;
+}
+
+@keyframes infiniteupdown {
+  0% {
+    transform: translateY(2px);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
+
+  100% {
+    transform: translateY(2px);
+  }
+}
+
+.github-btn {
+  width: 10rem;
+  cursor: pointer;
+  background-color: #eae5e7;
+  border: 1px solid #eae5e7;
+  border-radius: 0.5rem;
+  color: #000;
+  padding: 0.75rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.github-btn:hover {
+  background-color: transparent;
+  border: 1px solid #eae5e7;
+  color: #eae5e7;
+  transition-duration: 500ms;
+}
+
+.about-prof {
+  width: 20rem;
+  border-radius: 1rem;
+}
+
+.about-header {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Espaço entre os ícones */
+  justify-content: center;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 50px 5px;
+  margin-bottom: 30px;
+}
+
+.icon-container a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.icon-container a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.icon-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #45505b;
+}
+
+.resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #9a0c3be5;
+  position: relative;
+}
+
+.resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #9a0c3be5;
+  margin-bottom: 10px;
+}
+
+.resume-item h5 {
+  font-size: 16px;
+  background: #f7f1f3;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume-item ul {
+  padding-left: 20px;
+}
+
+.resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #9a0c3be5;
+}
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.portfolio-container {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 30px 0;
+  margin-bottom: 30px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px; /* Espaço entre as imagens */
+  justify-content: center;
+  padding: 20px;
+}
+
+.image-container a {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.8);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.image-container a:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 1.2);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  background-color: #310305e5;
+  padding-top: 4.3rem;
+  padding-bottom: 2.4rem;
+}
+
+.footer-point {
+  font-size: 0.7rem;
+  opacity: 50%;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: inherit;
+}
+
+.footer-link:hover {
+  color: #eab6ce;
+  text-decoration: inherit;
+}
+
+.footer-link:active {
+  color: white;
+  text-decoration: inherit;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-collapse {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .home-name {
+    font-size: 3rem;
+  }
+
+  .nav {
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  .about-prof {
+    width: 15rem;
+    border-radius: 50%;
+  }
+
+  .about-header {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .anchor {
+    top: -70px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .image-container a {
+    width: 200px;
+    height: 200px;
+  }
+
+  .icon-container a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .home-name {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .image-container a {
+    width: 150px;
+    height: 150px;
+  }
+
+  .icon-container a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .home-name {
+    font-size: 2rem;
+  }
+}

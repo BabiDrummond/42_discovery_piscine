@@ -4,19 +4,32 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="calc.css" />
         <script type="text/javascript" src="calc.js" defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body>
-        <input type="text" id="value1">
-        <select id="operator">
-            <option value="+">+</option>
-            <option value="-">-</option>
-            <option value="*">*</option>
-            <option value="/">/</option>
-            <option value="%">%</option>
-        </select>
-        <input type="text" id="value2">
-        <button type="submit" id="submit-btn">Try me!</button>
+    <div class="container">
+        <div class="calc">
+                <input type="text" id="display" readonly>
+                <button id="clear">Clear</button>
+                <button onclick="appendToCalculus('7')">7</button>
+                <button onclick="appendToCalculus('8')">8</button>
+                <button onclick="appendToCalculus('9')">9</button>
+                <button onclick="appendToCalculus('+')">+</button>
+                <button onclick="appendToCalculus('4')">4</button>
+                <button onclick="appendToCalculus('5')">5</button>
+                <button onclick="appendToCalculus('6')">6</button>
+                <button onclick="appendToCalculus('-')">-</button>
+                <button onclick="appendToCalculus('1')">1</button>
+                <button onclick="appendToCalculus('2')">2</button>
+                <button onclick="appendToCalculus('3')">3</button>
+                <button onclick="appendToCalculus('*')">*</button>
+                <button onclick="appendToCalculus('.')">.</button>
+                <button class="zero" onclick="appendToCalculus('0')">0</button>
+                <button id="equals">=</button>
+                <button onclick="appendToCalculus('/')">/</button>
+        </div>
+    </div>
     </body>
 </html>

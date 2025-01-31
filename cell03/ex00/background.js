@@ -1,12 +1,6 @@
-const myButton = document.getElementById("btn-clk")
-let bodyEl = document.getElementById("bd-bg")
-
+const myButton = document.getElementById("bttn")
 myButton.addEventListener("click", changeBgColor)
 
 function changeBgColor(){
-    let red = Math.floor(Math.random() * 254)
-    let green = Math.floor(Math.random() * 254)
-    let blue = Math.floor(Math.random() * 254)
-
-    bodyEl.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")"
+    document.getElementById("bg").style.backgroundColor = "rgb(" + Math.floor(Math.random() * 254) + "," + Math.floor(Math.random() * 254) + "," + Math.floor(Math.random() * 254) + ")"
 }

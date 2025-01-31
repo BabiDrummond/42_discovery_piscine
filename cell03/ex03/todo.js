@@ -1,17 +1,17 @@
 const todo_list = document.getElementById("ft_list")
-const create_btn = document.getElementById("create-btn")
+const mybttn = document.getElementById("bttn")
 
-create_btn.onclick = function addTask() {
+mybttn.onclick = function addTask() {
     let content = window.prompt("Adicionar tarefa: ")
     createTask(content)
 }
 
 function createTask(text){
     const new_task = document.createElement("div")
-    new_task.innerText = text
+    new_task.className = "task"
+    new_task.innerText = "• " + text
 
     if (new_task.innerText){
-        todo_list.appendChild(new_task)
         todo_list.prepend(new_task)
         saveTasks()
     } else {
@@ -31,11 +31,10 @@ function saveTasks(){
     const task_list = todo_list.children
     
     for (let i = 0; i < task_list.length; i++){
-        tasks.push(task_list[i].textContent)
+        tasks.push(task_list[i].innerText)
     }
+
     document.cookie = `tasks=${JSON.stringify(tasks)}; path=/; max-age=31536000`
-    
-    console.log(document.cookie)
 }
 
 function loadTasks(){
